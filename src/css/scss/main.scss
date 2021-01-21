@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.glass {
+    backdrop-filter: blur(.3rem);
+}
+
+.bubble1 {
+    filter: blur(.1rem);
+}
+
+.bubble2 {
+    filter: blur(.3rem);
+}

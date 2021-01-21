@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/img/shendy-greeting.png" sizes="180x180">
+    <link rel="stylesheet" href="/public/css/tailwind.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+
+    <title>Cards Tailwind</title>
+    
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .glass {
+            backdrop-filter: blur(.5rem);
+        }
+
+        .bubble--tr {
+            top: 8%;
+            right: 20%;
+        }
+
+        .bubble--bl {
+            bottom: 8%;
+            left: 20%;
+        }
+
+        .glass__right__card {
+            flex-basis: 40%;
+        }
+
+        .glass__info__paragraph {
+            flex-basis: 60%;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- start container -->
+    <div class="2xl:container w-full h-screen bg-gradient-to-bl from-indigo-500 to-pink-200 flex items-center">
+
+        <!-- start glass -->
+        <section class="glass h-2/3 w-1/2 bg-white mx-auto bg-opacity-50 rounded-3xl z-10 overflow-hidden">
+            
+            <!-- inner glass -->
+            <div class="glass__inner md:container">
+
+                <!-- start cards -->
+                <div class="glass__cards h-screen flex flex-row">
+                    <!-- start glass card -->
+                    <div class="glass__card w-1/4 h-4/6 bg-white bg-opacity-40 flex flex-col justify-evenly items-center rounded-lg">
+                        <img src="src/img/shendy-mac.png" alt="shendy-icon" class="glass__img w-32 h-32 block mt-6 bg-purple-500 rounded-full shadow-md bg-opacity-40 transition duration-500 ease-in-out hover:bg-purple-600">
+                        <!-- start glass info -->
+                        <div class="glass__info h-4/6 flex flex-col justify-start text-center py-4 cursor-pointer">
+                            <h1 class="text-sm font-thin text-gray-700">@shendypratamaa</h1>
+                            <h1 class="text-xs font-extralight text-gray-400 tracking-wide uppercase py-2">Web Enthusiast</h1>
+                            <span class="h-3/4 flex flex-col justify-evenly text-gray-700 text-sm capitalize tracking-normal">
+                                <a class="hover:text-gray-400"href="#">Github</a>
+                                <a class="hover:text-gray-400"href="#">Discord</a>
+                                <a class="hover:text-gray-400"href="#">Instagram</a>
+                                <a class="hover:text-gray-400"href="#">Skype</a>
+                            </span>
+                        </div>
+                        <!-- end glass info -->
+                    </div>
+                    <!-- end glass card -->
+
+                                    
+                    <!-- start Cards Right -->
+
+
+                    <!-- end Cards Right -->
+
+
+                </div>
+                <!-- end cards -->
+            </div>
+            <!-- end inner glass -->
+        </section>
+
+        <!-- items for bg -->
+
+        <div class="bubble--tr inline-block w-40 h-40 bg-gradient-to-tr from-pink-300 to-purple-600 absolute rounded-full z-0"></div>
+        <div class="bubble--bl inline-block w-40 h-40 bg-gradient-to-tr from-pink-300 to-purple-600 absolute rounded-full z-0"></div>
+
+        <!-- end item for bg -->
+    </div>
+    
+</body>
+</html>
